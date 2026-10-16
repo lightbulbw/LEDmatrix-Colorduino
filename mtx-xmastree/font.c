@@ -1,0 +1,12 @@
+//#include <avr/pgmspace.h>                                                             
+//Font                    
+#include "Arduino.h"         
+const unsigned char font8_8[100][8] PROGMEM =                                 
+{                                                            
+    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 },   // sp(blank)  
+    { 0x00, 0x00, 0x00, 0xC0, 0xC0, 0x00, 0x00, 0x00 },   // rect (!)  
+    { 0x02, 0x14, 0x20, 0x00, 0x00, 0x20, 0x14, 0x02 },   // candles on the xmas tree(")
+    { 0x01, 0x0B, 0x1F, 0x3F, 0x3F, 0x1F, 0x0B, 0x01 },    //xmastree (#)                
+    { 0x00, 0x00, 0x14, 0x08, 0x3E, 0x08, 0x14, 0x00 }   // * ($)                
+    //add more simbols with the name of the next entry in the ascii table
+}; 
